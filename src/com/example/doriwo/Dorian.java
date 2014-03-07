@@ -81,8 +81,8 @@ public class Dorian extends FragmentActivity {
 
 		@Override
 		public int getCount() {
-			// Show 3 total pages.
-			return 5;
+			// ここで表示するページ枚数を指定する.
+			return 4;
 		}
 
 		@Override
@@ -90,11 +90,14 @@ public class Dorian extends FragmentActivity {
 			Locale l = Locale.getDefault();
 			switch (position) {
 			case 0:
+				
 				return getString(R.string.title_section1).toUpperCase(l);
 			case 1:
 				return getString(R.string.title_section2).toUpperCase(l);
 			case 2:
 				return getString(R.string.title_section3).toUpperCase(l);
+			case 3:
+				return getString(R.string.title_section4).toUpperCase(1);
 			}
 			return null;
 		}
